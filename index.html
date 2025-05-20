@@ -1,544 +1,259 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Anish Shetty</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anish Shetty - Senior BI Developer</title>
+    <meta name="description" content="Portfolio of Anish Shetty, Senior BI Developer specializing in Power BI, SQL, and Python.">
+    <meta name="keywords" content="Business Intelligence, Power BI, Data Analyst, SQL, Python, Anish Shetty">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
+        .sticky-nav { position: sticky; top: 0; z-index: 50; }
+        .bg-primary { background-color: #C51A4A; } /* Raspberry Pi red/pink */
+        .text-primary { color: #C51A4A; }
+        .bg-hover { background-color: #E57389; } /* Lighter shade for hover */
+        .text-hover { color: #E57389; }
+        .border-accent { border-color: #9B153A; } /* Darker shade for borders */
+        .hover\:bg-hover:hover { background-color: #E57389; }
+        .hover\:text-hover:hover { color: #E57389; }
+        .avatar-hover { transition: transform 0.3s ease; z-index: 10; }
+        .avatar-hover:hover { transform: scale(1.5); }
+    </style>
+    <!-- Google Analytics (Replace UA-XXXXX-Y with your tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
 </head>
+<body class="bg-white">
+    <!-- Navigation Menu -->
+    <nav class="bg-primary text-white py-3 sticky-nav shadow-md">
+        <div class="container mx-auto px-4 flex justify-center space-x-6">
+            <a href="#about" class="text-lg md:text-xl hover:text-hover">About</a>
+            <a href="#skills" class="text-lg md:text-xl hover:text-hover">Skills</a>
+            <a href="#portfolio" class="text-lg md:text-xl hover:text-hover">Portfolio</a>
+            <a href="#articles" class="text-lg md:text-xl hover:text-hover">Articles</a>
+            <a href="#contact" class="text-lg md:text-xl hover:text-hover">Contact</a>
+        </div>
+    </nav>
 
-<body class="is-preload">
+    <!-- Header -->
+    <header class="bg-primary text-white py-8 shadow-md">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between max-w-4xl space-y-6 md:space-y-0">
+            <div class="flex justify-center items-center space-x-6">
+                <img src="images/avatar.jpg" alt="Anish Shetty" class="w-32 h-32 rounded-full object-cover avatar-hover" aria-label="Profile picture of Anish Shetty">
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold">Anish Shetty</h1>
+                    <p class="text-lg">Senior BI Developer</p>
+                </div>
+            </div>
+            <a href="assets/doc/Resume Anish Shetty.pdf" download class="ml-8 md:ml-12 bg-white text-primary px-4 py-2 rounded-md hover:bg-hover transition">Download Resume</a>
+        </div>
+    </header>
 
-	<!-- Header -->
-	<header id="header">
-		<div class="inner">
-			<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-			<h1 style="font-size: x-large;"><strong>Anish Shetty</strong><br />
-				Senior BI Developer<br />
-			</h1>
-			<br />
-			<br />
-			<h4 style="font-size: medium">
-				<a download href="assets/doc/Resume Anish Shetty.pdf">Download Resume
-				</a>
-			</h4>
-		</div>
-	</header>
+    <!-- About Section -->
+    <section id="about" class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">About Me</h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                I'm Anish Shetty, a Senior BI Developer with over 5 years of experience, currently working with Siemens in Mumbai. I specialize in transforming complex data into actionable insights using Power BI, SQL, Python, and Azure tools. My passion lies in creating intuitive dashboards and solving data challenges. Outside of work, I enjoy reading about history, economics, and urban design, watching podcasts, and drawing.
+            </p>
+        </div>
+    </section>
 
-	<!-- Main -->
-	<div id="main">
+    <!-- Skills Section -->
+    <section id="skills" class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="bg-gray-100 p-4 rounded-lg text-center border border-accent hover-scale flex items-center justify-center space-x-2">
+                    <i class="fas fa-chart-pie text-primary text-lg"></i>
+                    <span>Power BI</span>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg text-center border border-accent hover-scale flex items-center justify-center space-x-2">
+                    <i class="fas fa-calculator text-primary text-lg"></i>
+                    <span>DAX Queries</span>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg text-center border border-accent hover-scale flex items-center justify-center space-x-2">
+                    <i class="fas fa-filter text-primary text-lg"></i>
+                    <span>Power Query</span>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg text-center border border-accent hover-scale flex items-center justify-center space-x-2">
+                    <i class="fas fa-database text-primary text-lg"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg text-center border border-accent hover-scale flex items-center justify-center space-x-2">
+                    <i class="fab fa-python text-primary text-lg"></i>
+                    <span>Python</span>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg text-center border border-accent hover-scale flex items-center justify-center space-x-2">
+                    <i class="fas fa-server text-primary text-lg"></i>
+                    <span>Azure Tools</span>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg text-center border border-accent hover-scale flex items-center justify-center space-x-2">
+                    <i class="fas fa-sitemap text-primary text-lg"></i>
+                    <span>Data Modeling</span>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg text-center border border-accent hover-scale flex items-center justify-center space-x-2">
+                    <i class="fas fa-table text-primary text-lg"></i>
+                    <span>Excel</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- One -->
-		<section id="one">
-			<header class="major">
-				<h2>About Me</h2>
-			</header>
-			<p>Hi there, I'm Anish Shetty and I am a Business Intelligence Developer. I love solving data problems and I
-				appreciate when I can draw insight from data and help build actionable solutions. <br> I leverage on
-				existing tools to bring about data driven solutions. I am proficient in Excel, Power BI, SQL, Python and
-				Azure tools for data analysis. I also enjoy being part of new technologies and trying out innovative
-				solutions. <br> Aside data, I enjoy reading books on History, Economics and Urban Design, watch various
-				podcasts and drawing.
-			</p>
-			<!--<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul> -->
-		</section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Portfolio Work</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md border border-accent hover-scale">
+                    <a href="https://www.novypro.com/project/improving-railway-signage-boards-power-bi" target="_blank" aria-label="Railway Signage Dashboard">
+                        <img src="images/thumbs/Railway.jpg" alt="Railway Signage Dashboard" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Improving Railway Signage Boards</h3>
+                        <p class="text-gray-600">Enhanced local train signboards using data visualization best practices.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-accent hover-scale">
+                    <a href="https://www.novypro.com/project/tour-de-france-%7C-infographic-report-power-bi" target="_blank" aria-label="Tour de France Dashboard">
+                        <img src="images/thumbs/01.jpg" alt="Tour de France Dashboard" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Tour de France Infographic</h3>
+                        <p class="text-gray-600">Maven Analytics competition submission with interactive visuals.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-accent hover-scale">
+                    <a href="https://www.novypro.com/project/gerard-duggan-kpi" target="_blank" aria-label="Gerard Duggan KPI Dashboard">
+                        <img src="images/thumbs/Gerard_KPI.png" alt="Gerard Duggan KPI Dashboard" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Gerard Duggan KPI</h3>
+                        <p class="text-gray-600">Implemented KPI visualizations using Power BI.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-accent hover-scale">
+                    <a href="https://www.novypro.com/project/adventure-works-power-bi" target="_blank" aria-label="Adventure Works Dashboard">
+                        <img src="images/thumbs/02.png" alt="Adventure Works Dashboard" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Adventure Works - Snowflake</h3>
+                        <p class="text-gray-600">Snowflake and Power BI integration for business analytics.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-accent hover-scale">
+                    <a href="https://www.novypro.com/project/covid-19-dashboard-6" target="_blank" aria-label="COVID-19 Dashboard">
+                        <img src="images/thumbs/03.png" alt="COVID-19 Dashboard" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">COVID-19 Dashboard</h3>
+                        <p class="text-gray-600">Analysis of 2020 COVID-19 dataset with interactive visuals.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-accent hover-scale">
+                    <a href="https://www.novypro.com/project/pm-modi-76th-independence-day-speech-word-cloud" target="_blank" aria-label="PM Modi Speech Word Cloud">
+                        <img src="images/thumbs/04.png" alt="PM Modi Speech Word Cloud" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">PM Modi Speech Word Cloud</h3>
+                        <p class="text-gray-600">Word cloud visualization using PySpark.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-accent hover-scale">
+                    <a href="https://www.novypro.com/project/us-superstore-sales-report" target="_blank" aria-label="US Superstore Sales Report">
+                        <img src="images/thumbs/05.png" alt="US Superstore Sales Report" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">US Superstore Sales Report</h3>
+                        <p class="text-gray-600">Sales analysis with Power BI visualizations.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-accent hover-scale">
+                    <a href="https://www.novypro.com/project/netflix-data-analysis-3" target="_blank" aria-label="Netflix Data Analysis">
+                        <img src="images/thumbs/06.png" alt="Netflix Data Analysis" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Netflix Data Analysis</h3>
+                        <p class="text-gray-600">Historical insights from Netflix dataset.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Two -->
-		<section id="two">
-			<h2>Portfolio Work</h2>
-			<div class="row">
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://www.novypro.com/project/improving-railway-signage-boards-power-bi"
-						target="_blank" class="image fit thumb"><img src="images/thumbs/Railway.jpg" alt="" /></a>
-					<h3>Improving Railway Signage-boards
-					</h3>
-					<p>Using data viz best pratices to improve local train signboards..</p>
-				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://www.novypro.com/project/tour-de-france-%7C-infographic-report-power-bi"
-						target="_blank" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-					<h3>Tour de France | Infographic Report
-					</h3>
-					<p>This is my first Maven Analytics Competition submission..</p>
-				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://www.novypro.com/project/gerard-duggan-kpi"
-						target="_blank" class="image fit thumb"><img src="images/thumbs/Gerard_KPI.png" alt="" /></a>
-					<h3>Gerard Duggan KPI
-					</h3>
-					<p>I tried to implement Gerard Duggan KPI using Power BI....</p>
-				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://www.novypro.com/project/adventure-works-power-bi" target="_blank"
-						class="image fit thumb"><img src="images/thumbs/02.png" alt="" /></a>
-					<h3>Adventure Works - Snowflake Project</h3>
-					<p>This is my Snowflake + Power BI project</p>
-				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://www.novypro.com/project/covid-19-dashboard-6" target="_blank"
-						class="image fit thumb"><img src="images/thumbs/03.png" alt="" /></a>
-					<h3>Covid-19 Dashboard</h3>
-					<p>Analysis on 2020 Covid-19 raw dataset</p>
-				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://www.novypro.com/project/pm-modi-76th-independence-day-speech-word-cloud"
-						target="_blank" class="image fit thumb"><img src="images/thumbs/04.png" alt="" /></a>
-					<h3>PM Modi 76th Independence Day Speech Word Cloud</h3>
-					<p>Explored WorkCloud visual data processed using PySpark</p>
-				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://www.novypro.com/project/us-superstore-sales-report" target="_blank"
-						class="image fit thumb"><img src="images/thumbs/05.png" alt="" /></a>
-					<h3>US Superstore Sales Report</h3>
-					<p>Worked on Sales Analysis report</p>
-				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://www.novypro.com/project/netflix-data-analysis-3" target="_blank"
-						class="image fit thumb"><img src="images/thumbs/06.png" alt="" /></a>
-					<h3>Netflix Data Analysis</h3>
-					<p>Analyzed Netflix Dataset to find historial insights</p>
-				</article>
-			</div>
-			<h3> Mumbai Ward Level Map Visualization</h3>
-        <iframe src="file:///C:/Users/Anish%20Shetty/Learning%20Python/Walking%20Project/map.html" width="100%" height="400"></iframe>
+    <!-- Medium Articles Section -->
+    <section id="articles" class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Medium Articles</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md border border-accent hover-scale">
+                    <a href="https://medium.com/@anish610/improving-mumbai-local-train-signboards-making-signboards-more-passenger-friendly-433bde9a8ba9" target="_blank" aria-label="Mumbai Train Signboards Article">
+                        <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*67Xz7KC8_RHkEXjNFFFgCA.jpeg" alt="Mumbai Train Signboards" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Improving Mumbai Train Signboards</h3>
+                        <p class="text-gray-600">Designing passenger-friendly train signboards.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-accent hover-scale">
+                    <a href="https://medium.com/@anish610/how-to-fetch-json-data-using-python-api-then-convert-it-into-dataframe-and-loading-into-mysql-466d65066d30" target="_blank" aria-label="Python API Data Article">
+                        <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*66Qd8MQQyU25kvJ17_BQ4g.jpeg" alt="Python API Data" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Fetching JSON Data with Python</h3>
+                        <p class="text-gray-600">Guide to fetching and processing JSON data into MySQL.</p>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-accent hover-scale">
+                    <a href="https://medium.com/@anish610/useful-git-commands-for-beginners-to-get-started-8fb27ca63d35" target="_blank" aria-label="Git Commands Article">
+                        <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2022/07/git-and-github.png" alt="Git Commands" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Useful Git Commands</h3>
+                        <p class="text-gray-600">Beginner-friendly guide to Git commands.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		</section>
-		<!-- 2.1 Medium Article Section -->
-		<section id="2.1">
-			<h2>Few of my Medium articles</h2>
-			<div class="row">
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://medium.com/@anish610/improving-mumbai-local-train-signboards-making-signboards-more-passenger-friendly-433bde9a8ba9"
-						target="_blank" class="image fit thumb"><img
-							src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*67Xz7KC8_RHkEXjNFFFgCA.jpeg"
-							alt="" /></a>
-					<h3>Improving Mumbai local train Signboards: Making Signboards more passenger-friendly
-					</h3>
-					<p>When was the last time you landed at any local train station in Mumbai in a hurry, and then
-						looked at the signboard which was not so easy to read?....</p>
-				</article>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-primary text-white py-12 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-6">Get In Touch</h2>
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/xgvkqrgn" method="POST" class="space-y-4 max-w-lg mx-auto">
+                <input type="text" name="name" placeholder="Name" class="w-full p-2 rounded-md text-gray-800" required aria-label="Your Name">
+                <input type="email" name="email" placeholder="Email" class="w-full p-2 rounded-md text-gray-800" required aria-label="Your Email">
+                <textarea name="message" placeholder="Message" class="w-full p-2 rounded-md text-gray-800" rows="4" required aria-label="Your Message"></textarea>
+                <button type="submit" class="bg-white text-primary px-4 py-2 rounded-md hover:bg-hover transition">Send Message</button>
+            </form>
+            <!-- Contact Info -->
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8 mt-8">
+                <div>
+                    <h3 class="text-lg font-semibold"><i class="fas fa-envelope mr-2"></i>Email</h3>
+                    <a href="mailto:anish610@gmail.com" class="text-gray-200 hover:text-hover" aria-label="Email Anish Shetty">anish610@gmail.com</a>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold"><i class="fab fa-linkedin mr-2"></i>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/anish-shetty-610/" class="text-gray-200 hover:text-hover" aria-label="Anish Shetty's LinkedIn">linkedin.com/in/anish-shetty-610</a>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold"><i class="fab fa-github mr-2"></i>GitHub</h3>
+                    <a href="https://github.com/anish610" class="text-gray-200 hover:text-hover" aria-label="Anish Shetty's GitHub">github.com/anish610</a>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold"><i class="fab fa-twitter mr-2"></i>Twitter</h3>
+                    <a href="https://twitter.com/AnishShetty610" class="text-gray-200 hover:text-hover" aria-label="Anish Shetty's Twitter">twitter.com/AnishShetty610</a>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold"><i class="fas fa-home mr-2"></i>Location</h3>
+                    <p class="text-gray-200">Mumbai, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://medium.com/@anish610/how-to-fetch-json-data-using-python-api-then-convert-it-into-dataframe-and-loading-into-mysql-466d65066d30"
-						target="_blank" class="image fit thumb"><img
-							src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*66Qd8MQQyU25kvJ17_BQ4g.jpeg"
-							alt="" /></a>
-					<h3>How to fetch JSON data using Python API, then convert it into DataFrame and loading into MySQL
-						Database?
-					</h3>
-					<p>In the below code, I have implemented
-						1-Python API to fetch JSON data from URL....
-					</p>
-				</article>
-
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://medium.com/@anish610/useful-git-commands-for-beginners-to-get-started-8fb27ca63d35"
-						target="_blank" class="image fit thumb"><img
-							src="https://www.freecodecamp.org/news/content/images/size/w2000/2022/07/git-and-github.png"
-							alt="" /></a>
-					<h3>Useful Git commands for beginners to get started!
-					</h3>
-					<p>For a beginner, learning and working with Git can be overwhelming. As there are multiple commands....
-					</p>
-				</article>
-			</div>
-
-			<ul class="actions">
-				<li><a href="#" class="button">Take me to top</a></li>
-			</ul>
-
-		</section>
-		<!-- Three -->
-		<section id="three">
-			<h2>Get In Touch</h2>
-			<div class="row">
-
-				<div class="col-4 col-12-small">
-					<ul class="labeled-icons" style="width: 270px;">
-						<li>
-							<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-							<a href="mailto: anish610@gmail.com" target="blank_">anish610@gmail.com</a>
-						</li>
-
-						<li>
-							<h3 class="icon brands fa-linkedin"><span class="label">LinkedIn</span></h3>
-							<a href="https://www.linkedin.com/in/anish-shetty-610/ "
-								target="blank_">linkedin.com/in/anish-shetty-610</a>
-						</li>
-
-						<li>
-							<h3 class="icon brands fa-github"><span class="label">Github</span></h3>
-							<a href="https://github.com/anish610 " target="blank_">github.com/anish610</a>
-						</li>
-						<li>
-							<h3 class="icon brands fa-twitter"><span class="label">Twitter</span></h3>
-							<a href="https://twitter.com/AnishShetty610" target="blank_">twitter.com/AnishShetty610</a>
-						</li>
-						<li>
-							<h3 class="icon solid fa-home"><span class="label">Location</span></h3>
-							Mumbai, India
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<!-- Four -->
-		<!--
-					<section id="four">
-						<h2>Elements</h2>
-
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				
-
-			</div>
-		-->
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/anish-shetty-610/" class="icon brands fa-linkedin"><span
-								class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/anish610" class="icon brands fa-github"><span
-								class="label">Github</span></a></li>
-					<li><a href="https://medium.com/@anish610" class="icon brands fa-medium"><span
-								class="label">Medium</span></a></li>
-					<li><a href="https://twitter.com/AnishShetty610" class="icon brands fa-twitter"><span
-								class="label">Twitter</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Anish Shetty. All rights reserved</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <ul class="flex justify-center space-x-6 mb-4">
+                <li><a href="mailto:anish610@gmail.com" class="text-gray-300 hover:text-hover" aria-label="Email Anish Shetty"><i class="fas fa-envelope fa-lg"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/anish-shetty-610/" class="text-gray-300 hover:text-hover" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                <li><a href="https://github.com/anish610" class="text-gray-300 hover:text-hover" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a></li>
+                <li><a href="https://medium.com/@anish610" class="text-gray-300 hover:text-hover" aria-label="Medium"><i class="fab fa-medium fa-lg"></i></a></li>
+                <li><a href="https://twitter.com/AnishShetty610" class="text-gray-300 hover:text-hover" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a></li>
+            </ul>
+            <p>© Anish Shetty. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
