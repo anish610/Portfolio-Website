@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +9,102 @@
     <meta name="keywords" content="Business Intelligence, Power BI, Data Analyst, SQL, Python, Anish Shetty">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <style>
-        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
-        .hover-scale { transition: transform 0.3s ease; }
-        .hover-scale:hover { transform: scale(1.05); }
-        .sticky-nav { position: sticky; top: 0; z-index: 50; }
-        .bg-primary { background-color: #C51A4A; } /* Raspberry Pi red/pink */
-        .text-primary { color: #C51A4A; }
-        .bg-hover { background-color: #E57389; } /* Lighter shade for hover */
-        .text-hover { color: #E57389; }
-        .border-accent { border-color: #9B153A; } /* Darker shade for borders */
-        .hover\:bg-hover:hover { background-color: #E57389; }
-        .hover\:text-hover:hover { color: #E57389; }
-        .avatar-hover { transition: transform 0.3s ease; z-index: 10; }
-        .avatar-hover:hover { transform: scale(1.5); }
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f4b9b3;
+            /* Soft peach as primary background */
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        
+        .bg-primary {
+            background-color: #D05A4E;
+            /* Vibrant orange as primary color */
+        }
+        
+        .text-primary {
+            color: #D05A4E;
+        }
+        
+        .bg-hover {
+            background-color: #891f13;
+            /* Deep red-orange for hover states */
+        }
+        
+        .text-hover {
+            color: #dfd6d5;
+        }
+        
+        .border-accent {
+            border-color: #cd2f1d;
+            /* Deep red-orange for borders */
+        }
+        
+        .hover\:bg-hover:hover {
+            background-color: #3e3b3a;
+        }
+        
+        .hover\:text-hover:hover {
+            color: #79260c;
+        }
+        
+        .avatar-hover {
+            transition: transform 0.3s ease;
+            z-index: 10;
+        }
+        
+        .avatar-hover:hover {
+            transform: scale(1.5);
+        }
+        
+        footer .text-gray-300 {
+            color: #ca7e76;
+            /* Dark brown for footer text/icons */
+        }
+        
+        footer .hover\:text-hover:hover {
+            color: #ffffff;
+            /* Deep red-orange for footer hover */
+        }
+        
+        #about,
+        #skills,
+        #portfolio,
+        #articles,
+        #contact {
+            padding-top: 70px;
+            /* Added padding to prevent overlap with sticky nav */
+        }
     </style>
     <!-- Google Analytics (Replace UA-XXXXX-Y with your tracking ID) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'UA-XXXXX-Y');
     </script>
 </head>
+
 <body class="bg-white">
     <!-- Navigation Menu -->
     <nav class="bg-primary text-white py-3 sticky-nav shadow-md">
@@ -64,7 +136,8 @@
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">About Me</h2>
             <p class="text-lg text-gray-600 leading-relaxed">
-                I'm Anish Shetty, a Senior BI Developer with over 5 years of experience, currently working with Siemens in Mumbai. I specialize in transforming complex data into actionable insights using Power BI, SQL, Python, and Azure tools. My passion lies in creating intuitive dashboards and solving data challenges. Outside of work, I enjoy reading about history, economics, and urban design, watching podcasts, and drawing.
+                I'm Anish Shetty, a Senior BI Developer with over 5 years of experience, currently working with Siemens in Mumbai. I specialize in transforming complex data into actionable insights using Power BI, SQL, Python, and Azure tools. My passion lies in creating
+                intuitive dashboards and solving data challenges. Outside of work, I enjoy reading about history, economics, and urban design, watching podcasts, and drawing.
             </p>
         </div>
     </section>
@@ -252,8 +325,9 @@
                 <li><a href="https://medium.com/@anish610" class="text-gray-300 hover:text-hover" aria-label="Medium"><i class="fab fa-medium fa-lg"></i></a></li>
                 <li><a href="https://twitter.com/AnishShetty610" class="text-gray-300 hover:text-hover" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a></li>
             </ul>
-            <p>© Anish Shetty. All rights reserved.</p>
+            <p>© Anish Shetty. All rights reserved 2025.</p>
         </div>
     </footer>
 </body>
+
 </html>
